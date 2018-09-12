@@ -7,13 +7,7 @@ public class Movement : MonoBehaviour
   [SerializeField]
   private float torque = 100f;
 
-  private Rigidbody2D rb;
   private float turn = 0;
-
-  private void Start()
-  {
-    rb = GetComponent<Rigidbody2D>();
-  }
 
   // Update is called once per frame
   private void Update()
