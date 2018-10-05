@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 50676561310813024}
   - component: {fileID: 58704107688635592}
   - component: {fileID: 233755418507802924}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4273016975957826}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Ragdoll (S)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,8 @@ GameObject:
   - component: {fileID: 212724966480721622}
   - component: {fileID: 50659844352484930}
   - component: {fileID: 61053645601636614}
-  m_Layer: 9
+  - component: {fileID: 247780622929783092}
+  m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +430,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1721642742954328}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1c1c59d4faa23db4f901209c654c8d2a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -454,7 +455,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1717341236249834}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1c1c59d4faa23db4f901209c654c8d2a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -483,7 +484,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -780,7 +781,7 @@ HingeJoint2D:
   m_GameObject: {fileID: 1207294963738248}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 50659844352484930}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -803,7 +804,7 @@ HingeJoint2D:
   m_GameObject: {fileID: 1717341236249834}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 50659844352484930}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -826,7 +827,7 @@ HingeJoint2D:
   m_GameObject: {fileID: 1772296255865296}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 50659844352484930}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -872,7 +873,7 @@ HingeJoint2D:
   m_GameObject: {fileID: 1721642742954328}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 50659844352484930}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -887,3 +888,13 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 180
+--- !u!247 &247780622929783092
+ConstantForce2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1866998007542856}
+  m_Enabled: 1
+  m_Force: {x: 0, y: -50}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 0
